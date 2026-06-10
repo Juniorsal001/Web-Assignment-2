@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+header{
+    background: #0066cc;
+    color: white;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Hero Section */
+
+.hero{
+    height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5)),rgba(0, 0, 0, 0.5)
+    url('https://images.unsplash.com/photo-1587351021759-3e566b3db4f1');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content{
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+ /* Search Bar*/
+
+.search-box input{
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button{
+    padding: 12px 20px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About*/
+
+.about a{
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+}
+
+.about h2{
+    color: #0066cc;
+    margin-bottom: center;
+}
+
+.about p{
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* Services */
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.card{
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3{
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact{
+    background: white;
+    padding: 60ex 20px;
+    text-align: center;
+}
+
+.contact h2{
+    color:#0066cc;
+    margin-bottom: 25px;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer*/ 
+
+footer{
+    background: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet */
+
+@media(max-width:768){
+    nav{
+    flex-direction: column;
+    gap: 15px;
+}
+}
+
+
+.services{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+    font-size: 2.2rem;
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .search-box input{
+        width: 100;
+    }
+}
